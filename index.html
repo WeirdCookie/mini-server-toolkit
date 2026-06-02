@@ -3,51 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <title>Website Dashboard</title>
+   
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <h1>Server Toolkit</h1>
-    <p>Control your services</p>
-</header>
+    <header>
+       <h1>Server Toolkit</h1>
+       <p>Control your services</p>
+    </header>
 
-<main>
+    <main>
 
-    <section>
-        <h3>Always-On-PC</h3>
-        <button class="toggle">AUS</button>
-    </section>
+        <section>
+          <h3>Always-On-PC</h3>
+          <button class="toggle">AUS</button>
+        </section>
 
-    <section>
-        <h3>School Assistant</h3>
-        <button class="toggle">AUS</button>
-    </section>
+        <section>
+            <h3>School Assistant</h3>
+            <button class="toggle">AUS</button>
+        </section>
 
-    <section>
-        <h3>Download Booster</h3>
-        <button class="toggle">AUS</button>
-    </section>
+        <section>
+           <h3>Download Booster</h3>
+           <button class="toggle">AUS</button>
+        </section>
 
-    <section>
-        <h3>Dev Assistant</h3>
-        <button class="toggle">AUS</button>
-    </section>
+        <section>
+           <h3>Dev Assistant</h3>
+           <button class="toggle">AUS</button>
+       </section>
 
-    <section>
-        <h3>API Playground</h3>
-        <button class="toggle">AUS</button>
-    </section>
+        <section>
+           <h3>API Playground</h3>
+           <button class="toggle">AUS</button>
+        </section>
 
-</main>
+    </main>
 
-<footer>
-    <p>© 2026 Ole — Server Toolkit</p>
-</footer>
+    <footer>
+        <p>© 2026 Ole — Server Toolkit</p>
+    </footer>
 
-<script>
-    document.querySelectorAll(".toggle").forEach(btn => { 
-      let state = false;
+    <script>
+       document.querySelectorAll(".toggle").forEach(btn => { 
+          let state = false;
 
       btn.onclick = () => {
         state = !state;
@@ -55,7 +57,8 @@
         btn.classList.toggle("active", state);
       };
     });
-</script>
+    </script>
 
 </body>
 </html>
+
