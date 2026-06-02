@@ -1,5 +1,11 @@
 import psutil
-cpu_wert = psutil.cpu_percent(interval=1)
-ram_wert = psutil.virtual_memory().percent
-print(cpu_wert)
-print(ram_wert)
+from flask import Flask, jsonify
+
+app = Flask(__name__)
+
+@app.get("/system")
+def system():
+    return jsonify({
+        "cpu": psutil.cpu_percent(interval=1),
+        "ram": psutil.virtual_memory().percent
+    })
