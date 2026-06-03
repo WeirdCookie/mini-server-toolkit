@@ -1,64 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Website Dashboard</title>
-   
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <header>
-       <h1>Server Toolkit</h1>
-       <p>Control your services</p>
-    </header>
-
-    <main>
-
-        <section>
-          <h3>Always-On-PC</h3>
-          <button class="toggle">AUS</button>
-        </section>
-
-        <section>
-            <h3>School Assistant</h3>
-            <button class="toggle">AUS</button>
-        </section>
-
-        <section>
-           <h3>Download Booster</h3>
-           <button class="toggle">AUS</button>
-        </section>
-
-        <section>
-           <h3>Dev Assistant</h3>
-           <button class="toggle">AUS</button>
-       </section>
-
-        <section>
-           <h3>API Playground</h3>
-           <button class="toggle">AUS</button>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>© 2026 Ole — Server Toolkit</p>
-    </footer>
-
-    <script>
-       document.querySelectorAll(".toggle").forEach(btn => { 
-          let state = false;
-
-      btn.onclick = () => {
-        state = !state;
-        btn.textContent = state ? "AN" : "AUS";
-        btn.classList.toggle("active", state);
-      };
-    });
-    </script>
-
-</body>
+<html>
+	<body>
+		<label for="menü-toggle" class="menü-btn">☰ Menü</label>
+		<input type="checkbox" id="menü-toggle" class="menü-checkbox">
+		<nav class="seitenmenü">
+  		<ul>
+			<li><a href="index.html">Home</a>                      <br>
+			<li><a href="Notifications.html">Notifications</a>     <br>
+			<li><a href="Your_Likes.html">Likes</a>                <br>
+			<li><a href="Settings.html">Settings</a>               <br>
+  		</ul>
+	</nav>
+	</body>
 </html>
-
