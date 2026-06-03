@@ -1,0 +1,2 @@
+06/03/2026:
+Today I uploaded a code for the sidebar. To be precise, I added the buttons for Home, Notifications, Likes, and Settings in HTML, but also a button that will later help to toggle the sidebar. Btw the "Tools.html" Code isn´t coded by myself. It was coded by WeirdCookie.
