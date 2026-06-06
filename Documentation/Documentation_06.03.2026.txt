@@ -1,3 +1,0 @@
-The sidebar is intended to provide features that are commonly available everyplace nowadays. It is supposed to help you find certain things and keep you up to date.
-There are likes for things you use often. Notifications to stay up to date. Settings to make the website as pleasant as possible and home to return to the start screen.
-The code was written by an absolute beginner (Cookieslayer), so the structure seems rather strange and messy, and it will probably need to be changed often.
