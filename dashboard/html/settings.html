@@ -1,5 +1,198 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard – Settings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
-  <h1>Settings</h1>
+
+    <!-- Sidepanel -->
+    <div class="sidepanel">
+        <h2>Dashboard</h2>
+        <ul>
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="notifications.html">🔔 Notifications</a></li>
+            <li><a href="tools.html">🧰 Tools</a></li>
+            <li><a href="settings.html">⚙️ Settings</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main class="content">
+
+        <h1>Einstellungen</h1>
+        <p>Hier kannst du dein Dashboard anpassen.</p>
+
+        <!-- USER PROFILE -->
+        <section class="settings-section">
+            <h2>Benutzerprofil</h2>
+
+            <label class="setting-item">
+                <span>Benutzername</span>
+                <input type="text" id="username" placeholder="Dein Name">
+            </label>
+
+            <label class="setting-item">
+                <span>Avatar‑URL</span>
+                <input type="text" id="avatar-url" placeholder="https://...">
+            </label>
+
+            <label class="setting-item">
+                <span>Profilfarbe</span>
+                <input type="color" id="profile-color">
+            </label>
+        </section>
+
+        <!-- THEME -->
+        <section class="settings-section">
+            <h2>Theme</h2>
+
+            <label class="setting-item">
+                <span>Dark Mode</span>
+                <input type="checkbox" id="theme-toggle">
+            </label>
+
+            <label class="setting-item">
+                <span>Automatisches Theme</span>
+                <input type="checkbox" id="theme-auto">
+            </label>
+
+            <label class="setting-item">
+                <span>Akzentfarbe</span>
+                <input type="color" id="accent-color">
+            </label>
+        </section>
+
+        <!-- LANGUAGE -->
+        <section class="settings-section">
+            <h2>Sprache</h2>
+            <label class="setting-item">
+                <span>Language</span>
+                <select id="language-select">
+                    <option value="de">Deutsch</option>
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <option value="es">Español</option>
+                </select>
+            </label>
+        </section>
+
+        <!-- NETWORK -->
+        <section class="settings-section">
+            <h2>Netzwerk</h2>
+
+            <label class="setting-item">
+                <span>API‑URL</span>
+                <input type="text" id="api-url" placeholder="http://localhost:5000">
+            </label>
+
+            <label class="setting-item">
+                <span>Timeout (ms)</span>
+                <input type="number" id="api-timeout" value="5000">
+            </label>
+
+            <label class="setting-item">
+                <span>Offline‑Modus</span>
+                <input type="checkbox" id="offline-mode">
+            </label>
+        </section>
+
+        <!-- PRIVACY -->
+        <section class="settings-section">
+            <h2>Datenschutz</h2>
+
+            <label class="setting-item">
+                <span>Crash‑Reports senden</span>
+                <input type="checkbox" id="send-crash-reports">
+            </label>
+
+            <label class="setting-item">
+                <span>Nutzungsstatistiken teilen</span>
+                <input type="checkbox" id="share-usage">
+            </label>
+
+            <label class="setting-item">
+                <span>Cookies erlauben</span>
+                <input type="checkbox" id="allow-cookies">
+            </label>
+        </section>
+
+        <!-- SYSTEM -->
+        <section class="settings-section">
+            <h2>System</h2>
+
+            <label class="setting-item">
+                <span>Auto‑Update</span>
+                <input type="checkbox" id="auto-update">
+            </label>
+
+            <label class="setting-item">
+                <span>Cache löschen</span>
+                <button id="clear-cache" class="small-btn">Löschen</button>
+            </label>
+
+            <label class="setting-item">
+                <span>Log‑Level</span>
+                <select id="log-level">
+                    <option value="info">Info</option>
+                    <option value="warn">Warn</option>
+                    <option value="error">Error</option>
+                    <option value="debug">Debug</option>
+                </select>
+            </label>
+        </section>
+
+        <!-- DEVELOPER -->
+        <section class="settings-section">
+            <h2>Entwickler‑Optionen</h2>
+
+            <label class="setting-item">
+                <span>Dev‑Mode aktivieren</span>
+                <input type="checkbox" id="dev-mode">
+            </label>
+
+            <label class="setting-item">
+                <span>Konsole anzeigen</span>
+                <input type="checkbox" id="show-console">
+            </label>
+
+            <label class="setting-item">
+                <span>Debug‑Overlay</span>
+                <input type="checkbox" id="debug-overlay">
+            </label>
+        </section>
+
+        <!-- BACKUP -->
+        <section class="settings-section">
+            <h2>Backup & Restore</h2>
+
+            <label class="setting-item">
+                <span>Backup erstellen</span>
+                <button id="create-backup" class="small-btn">Backup</button>
+            </label>
+
+            <label class="setting-item">
+                <span>Backup importieren</span>
+                <input type="file" id="import-backup">
+            </label>
+        </section>
+
+        <!-- RESET -->
+        <section class="settings-section">
+            <h2>Zurücksetzen</h2>
+            <button id="reset-settings" class="reset-btn">Alle Einstellungen zurücksetzen</button>
+        </section>
+
+        <!-- SAVE -->
+        <section class="settings-section">
+            <button id="save-settings" class="save-btn">Speichern</button>
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
 </body>
 </html>
