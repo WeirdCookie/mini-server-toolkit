@@ -1,16 +1,44 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-family: montserat;
-    background: #d5f2db;
+body {
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
 }
-nav ul{
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 260px;
-    position: fixed;
-    top: 0;
-    left: 0px;
-    background-color: #fcfefc;;
-} 
+
+/* Sidepanel */
+.sidepanel {
+  width: 220px;
+  background-color: #1e1e1e;
+  color: white;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidepanel h2 {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+.sidepanel ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidepanel li {
+  margin: 10px 0;
+}
+
+.sidepanel a {
+  color: white;
+  text-decoration: none;
+}
+
+.sidepanel a:hover {
+  text-decoration: underline;
+}
+
+/* Hauptinhalt */
+.content {
+  flex: 1;
+  padding: 20px;
+}
