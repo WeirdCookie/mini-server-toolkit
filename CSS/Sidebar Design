@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: montserat;
+    background: #d5f2db;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 260px;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    background-color: #fcfefc;;
+} 
