@@ -1,19 +1,65 @@
-<html lang="en"></html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0>
-    <title>NonTitel</title>
-</head>	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard – Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
-		<label for="menu-toggle" class="menu-btn">☰ Sidebar</label>
-		<input type="checkbox" id="menu-toggle" class="menu-checkbox">
-	<nav class="side bar">
-  		<ul>
-			<li></li><a href="index.html">Home</a>                      <br>
-			<li><a href="Notifications.html">Notifications</a>     <br>
-			<li><a href="Your_Likes.html">Likes</a>                <br>
-			<li><a href="Settings.html">Settings</a>               <br>
-  		</ul>
-	</nav>
-	</body>
+
+    <div class="sidepanel">
+        <h2>Dashboard</h2>
+        <ul>
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="notifications.html">🔔 Notifications</a></li>
+            <li><a href="tools.html">🧰 Tools</a></li>
+            <li><a href="settings.html">⚙️ Settings</a></li>
+        </ul>
+    </div>
+
+    <main class="content">
+        <h1>Dashboard Overview</h1>
+        <p>Willkommen auf der Startseite deines Dashboards.</p>
+
+        <section class="status-section">
+            <h2>System Status</h2>
+
+            <div class="status-card">
+                <p>CPU:</p>
+                <span id="cpu-status">Loading...</span>
+            </div>
+
+            <div class="status-card">
+                <p>RAM:</p>
+                <span id="ram-status">Loading...</span>
+            </div>
+
+            <div class="status-card">
+                <p>Uptime:</p>
+                <span id="uptime">Loading...</span>
+            </div>
+        </section>
+
+        <section class="quick-tools">
+            <h2>Schnellzugriffe</h2>
+
+            <div class="quick-card">
+                <a href="tools.html">Alle Tools anzeigen</a>
+            </div>
+
+            <div class="quick-card">
+                <a href="notifications.html">Benachrichtigungen</a>
+            </div>
+
+            <div class="quick-card">
+                <a href="settings.html">Einstellungen</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
 </html>
