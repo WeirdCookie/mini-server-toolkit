@@ -1,2 +1,0 @@
-The HTML code was updated, to be precise, the <head> command. Now it should say NonTitle there because we don't have a name yet. It should now be formatted for different devices.
-The CSS code has been started, but I suspect it still doesn't work. There should now be a background color and a color for the sidebar.
