@@ -2,62 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Website Dashboard</title>
-   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard – Tools</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-       <h1>Server Toolkit</h1>
-       <p>Control your services</p>
-    </header>
+    <!-- Sidepanel -->
+    <div class="sidepanel">
+        <h2>Dashboard</h2>
+        <ul>
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="notifications.html">🔔 Notifications</a></li>
+            <li><a href="tools.html">🧰 Tools</a></li>
+            <li><a href="settings.html">⚙️ Settings</a></li>
+        </ul>
+    </div>
 
-    <main>
+    <!-- Main Content -->
+    <main class="content">
 
-        <section>
-          <h3>Always-On-PC</h3>
-          <button class="toggle">AUS</button>
-        </section>
+        <h1>Tools</h1>
+        <p>Hier findest du alle verfügbaren Tools.</p>
 
-        <section>
-            <h3>School Assistant</h3>
-            <button class="toggle">AUS</button>
-        </section>
+        <section class="tools-section">
 
-        <section>
-           <h3>Download Booster</h3>
-           <button class="toggle">AUS</button>
-        </section>
+            <div class="tool-card">
+                <h3>Always‑On‑PC</h3>
+                <p>Startet oder stoppt deinen PC‑Online‑Status.</p>
+                <button class="tool-btn" id="tool-pc-toggle">Starten</button>
+            </div>
 
-        <section>
-           <h3>Dev Assistant</h3>
-           <button class="toggle">AUS</button>
-       </section>
+            <div class="tool-card">
+                <h3>Download Booster</h3>
+                <p>Optimiert deine Download‑Geschwindigkeit.</p>
+                <button class="tool-btn" id="tool-download">Öffnen</button>
+            </div>
 
-        <section>
-           <h3>API Playground</h3>
-           <button class="toggle">AUS</button>
+            <div class="tool-card">
+                <h3>School Assistant</h3>
+                <p>Hilft dir bei Schulaufgaben und Organisation.</p>
+                <button class="tool-btn" id="tool-school">Starten</button>
+            </div>
+
         </section>
 
     </main>
 
-    <footer>
-        <p>© 2026 Ole — Server Toolkit</p>
-    </footer>
-
-    <script>
-       document.querySelectorAll(".toggle").forEach(btn => { 
-          let state = false;
-
-      btn.onclick = () => {
-        state = !state;
-        btn.textContent = state ? "AN" : "AUS";
-        btn.classList.toggle("active", state);
-      };
-    });
-    </script>
-
+    <script src="app.js"></script>
 </body>
 </html>
